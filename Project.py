@@ -129,7 +129,7 @@ class Game:
                             try:
                                 if (event.unicode == self.word[self.symbolcnt]):
                                     self.input_text += event.unicode
-                                    self.i += 1
+                                    self.symbolcnt += 1
                                 else:
                                     self.mistake += 1
                             except:
@@ -153,7 +153,7 @@ class Game:
         self.word = ''
         self.time_start = time.time()
         self.total_time = 0
-        self.wpm = 0
+        self.spm = 0
 
         # Получаем случайное предложение
         self.word = self.get_sentence()
