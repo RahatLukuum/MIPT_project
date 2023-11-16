@@ -142,7 +142,7 @@ class Game:
         self.screen.blit(self.open_img, (0, 0))
         self.active = False
 
-        self.i = 0
+        self.symbolcnt = 0
         self.mistake = 0
         pygame.display.update()
         time.sleep(1)
