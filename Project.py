@@ -52,7 +52,7 @@ class Game:
         ''' В файле sentences.txt хранится список предложений.
         Метод get_sentence() будет открывать его и возвращать случайное предложение из списка.
         Целая строка будет разбиваться с помощью символа новой строки.'''
-        f = open('sentences.txt' mode="r", encoding="UTF-8")
+        f = open('sentences.txt', mode="r", encoding="UTF-8")
         s = f.read()
         sentences = s.split('\n')
         sentence = random.choice(sentences)
